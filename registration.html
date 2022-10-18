@@ -1,0 +1,254 @@
+<!DOCYE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>สมัครสมาชิกผู้ใช้งาน</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="background-color: rgb(0, 168, 235)">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div
+              class="card shadow-2-strong card-registration"
+              style="border-radius: 15px"
+            >
+              <div class="card-body p-4 p-md-5">
+                <h2
+                  class="mb-4 pb-2 pb-md-0 mb-md-3"
+                  style="text-align: center"
+                >
+                  สมัครสมาชิกผู้ใช้งาน
+                </h2>
+                <form
+                  action="registrationSuccess.php"
+                  method="post"
+                  enctype="multipart/form-data"
+                >
+                  <div class="row">
+                    <h4 style="text-align: left">1.ข้อมูลส่วนตัว</h4>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="CustomerID"
+                          >ชื่อผู้ใช้ :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          placeholder="ชื่อผู้ใช้"
+                          name="CustomerID"
+                          id="CustomerID"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="cName"
+                          >ชื่อ-นามสกุล :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          placeholder="ชื่อ-สกุล"
+                          name="cName"
+                          id="cName"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-2 d-flex align-items-center">
+                      <div class="form-outline datepicker w-100">
+                        <label class="form-label" for="cPhone"
+                          >เบอร์โทรศัพท์ :</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control form-control-sm"
+                          placeholder="เบอร์โทรศัพท์"
+                          name="cPhone"
+                          id="cPhone"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="อีเมล">อีเมล :</label>
+                        <input
+                          type="email"
+                          class="form-control form-control-sm"
+                          placeholder="อีเมล"
+                          name="cEmail"
+                          id="cEmail"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="รหัสผ่าน"
+                          >รหัสผ่าน :</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control form-control-sm"
+                          placeholder="รหัสผ่าน"
+                          name="cPassword"
+                          id="cPassword"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h4 style="text-align: left">2.ที่อยู่ปัจจุบัน</h4>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="บ้านเลขที่"
+                          >บ้านเลขที่ :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          placeholder="บ้านเลขที่"
+                          name="cHouseNum"
+                          id="cHouseNum"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="จังหวัด"
+                          >จังหวัด :</label
+                        >
+                        <select
+                          style="width: 100%"
+                          class="select form-control-sm"
+                          id="cProvince"
+                          name="cProvince"
+                        >
+                          <option value="1" disabled selected>
+                            เลือกจังหวัด
+                          </option>
+                          <option value="กรุงเทพ">กรุงเทพ</option>
+                          <option value="ขอนแก่น">ขอนแก่น</option>
+                          <option value="ปทุมธานี">ปทุมธานี</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="cCity">อำเภอ :</label>
+                        <select
+                          style="width: 100%"
+                          class="select form-control-sm"
+                          id="cCity"
+                          name="cCity"
+                        >
+                          <option value="1" disabled selected>
+                            เลือกอำเภอ
+                          </option>
+                          <option value="บางปะกง">บางปะกง</option>
+                          <option value="คลอง6">คลอง6</option>
+                          <option value="ดอนเมือง">ดอนเมือง</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="cDistrict">ตำบล :</label>
+                        <select
+                          style="width: 100%"
+                          class="select form-control-sm"
+                          id="cDistrict"
+                          name="cDistrict"
+                        >
+                          <option value="1" disabled selected>เลือกตำบล</option>
+                          <option value="ทุ่งสองห้อง">ทุ่งสองห้อง</option>
+                          <option value="บางเขน">บางเขน</option>
+                          <option value="สนามบิน">สนามบิน</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-2 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="รหัสไปรษณีย์"
+                          >รหัสไปรษณีย์ :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          placeholder="รหัสไปรษณีย์"
+                          name="cPostcode"
+                          id="cPostcode"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-2 pb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="รายละเอียดที่อยู่"
+                          >รายละเอียดที่อยู่ :</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control form-control-sm"
+                          placeholder="หมู่, ซอย, ถนน"
+                          name="cLocDetail"
+                          id="cLocDetail"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label"
+                      >อัปโหลดรูปโปรไฟล์ :</label
+                    >
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="cDirImg"
+                      name="cDirImg"
+                    />
+                  </div>
+                  <div class="mt-4 pt-2" style="text-align: center">
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="สมัครสมาชิก"
+                    />
+                    <input
+                      class="btn btn-secondary"
+                      type="reset"
+                      value="ยกเลิก"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

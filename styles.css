@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to left, #0000cc 0%, #00ccff 100%);
+  margin: 0;
+  padding: 0;
+}
+.menu-item {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+.frame {
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 24px;
+  margin: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+.logo {
+  width: 130px;
+  height: 55px;
+  padding: 0px;
+  margin: 0px;
+}
+
