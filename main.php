@@ -37,7 +37,7 @@
         <br><br>
         <div class="frame" style="background-color: rgba(241,240,246,255);">
             <center>
-                <h1>ประเภททำความสะอาดd</h1>
+                <h1>ประเภททำความสะอาดddddd</h1>
                 <a href="general.php"><img style="width: 300px; height: 400px;" src="picture/main1.png" /></a>
                 <a href="virus.php"><img style="width: 400; height: 400px;" src="picture/main2.png" /></a>
 
